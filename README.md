@@ -16,10 +16,13 @@ A json file of premade statements/questions with responses, if you're having iss
 `
 
 **> config.json > discordBot > token**
+
 Your Discord bot's token, you can make a Discord bot on Discord's developer portal.
 
 **> config.json > discordBot > ownerId**
+
 This isn't used yet, behavior will be updated later
 
 **> config.json > discordBot > prefix**
+
 A symbol, letter, number, or series of the formers that start a command. 
