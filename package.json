@@ -1,0 +1,19 @@
+{
+  "name": "Cody",
+  "version": "1.0.0",
+  "description": "My pet dog manifested into a 'jack of all' trades discord bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Basic#2142",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "discord.js": "^14.6.0",
+    "node-fetch": "^3.2.10",
+    "quick.db": "^9.0.6",
+    "string-similarity": "^4.0.4",
+    "uwuifier": "^4.0.4"
+  }
+}
