@@ -1,6 +1,6 @@
 # About
 Codi is a jack-of-all-trades discord bot made to assist users in discord.gg/callie. 
-This bot is made completely in my free time, any commits to improve my code or syntax is highly appreciated as I'm very willing to learn better practices.
+This bot is made completely in my free time, any pull requests to improve my code or syntax is highly appreciated as I'm very willing to learn better practices.
 Just to clarifiy **whitelists and premium services** included in the server's bot will not be included.
 
 # To Do
