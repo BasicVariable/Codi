@@ -13,22 +13,24 @@ const uwuifier = new Uwuifier({
 });
 
 const checkSimilarStatements = (message) => {
-    let distances = {all: [], distance2Answer: {}};
+    let distanceMap = new Map();
 
     for (question in botResponses){
         let distance = stringSimilarity.compareTwoStrings(question, message.toLowerCase());
-        let randomId = (randomBytes(16).toString('hex')).substring(0,16);
-
-        distances.all.push(`${randomId}${distance}`); 
-        distances.distance2Answer[`${randomId}${distance}`] = botResponses[question]
+        
+        distanceMap.set(
+            botResponses[question],
+            distance
+        )
     };
 
-    distances.all.sort((a, b) => parseFloat(b.substring(16))-parseFloat(a.substring(16)));
+    let sortedMap = distanceMap.entries().sort((a, b) => b-a);
+    let closest = sortedMap.entries().next().value;
 
-    // console.log(distances);
+    // console.log(closest);
 
-    if (parseFloat(distances.all[0].substring(16)) > 0.45){
-        return uwuifier.uwuifySentence(distances.distance2Answer[distances.all[0]])
+    if (closest[1] > 0.45){
+        return uwuifier.uwuifySentence(closest[0])
     } 
 };
 
