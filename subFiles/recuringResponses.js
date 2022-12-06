@@ -24,8 +24,8 @@ const checkSimilarStatements = (message) => {
         )
     };
 
-    let sortedMap = distanceMap.entries().sort((a, b) => b-a);
-    let closest = sortedMap.entries().next().value;
+    let sortedMap = [...distanceMap.entries()].sort((a, b) => b[1]-a[1]);
+    let closest = sortedMap.entries().next().value[1];
 
     // console.log(closest);
 
