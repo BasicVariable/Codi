@@ -7,7 +7,7 @@ const { Worker } = require("worker_threads")
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 // ----
-const discordBot = require("./subFiles/discord.js")
+const discordBot = require("./subFiles/discordBot.js")
 // ----
 
 const getRolimonsValues = async () => {
