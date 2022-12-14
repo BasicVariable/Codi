@@ -1,7 +1,6 @@
 {
     "discordBot": {
         "token": "",
-        "ownerId": "",
-        "prefix": "%"
+        "ownerId": ""
     }
 }
