@@ -4,7 +4,8 @@ This bot is made completely in my free time, any pull requests to improve my cod
 Just to clarifiy **whitelists and premium services** included in the server's bot will not be included.
 
 # To Do
-- [ ] Add paginated help command
+- [x] Add paginated help command
+- [x] Ticket bot
 - [ ] Add Social update notifier (twitter/reddit/instagram/youtube/twitch)
 - [ ] Rewrite old commands from Cali bot
 
