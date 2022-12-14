@@ -30,7 +30,3 @@ Your Discord bot's token, you can make a Discord bot on Discord's developer port
 **> config.json > discordBot > ownerId**
 
 This isn't used yet, behavior will be updated later
-
-**> config.json > discordBot > prefix**
-
-A symbol, letter, number, or series of the formers that start a command. 
