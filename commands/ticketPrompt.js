@@ -156,7 +156,7 @@ subCommands["close-ticket"] = async (interaction, options) => {
     let user = await interaction.guild.members.cache.get(userId);
 
     let channel = await interaction.guild.channels.cache.get(isTicket);
-    if (user) await interaction.user.send(`Your ticket, made from ${channel.name}, was closed for:\n\n${(options.length>0)?options[0].value:"no reason"}`);
+    if (user) await user.send(`Your ticket, made from ${channel.name}, was closed for:\n\n${(options.length>0)?options[0].value:"no reason"}`);
 
     setTimeout(()=>{
         interaction.channel.delete();
